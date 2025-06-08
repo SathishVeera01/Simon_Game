@@ -30,7 +30,7 @@ function playSound(name) {
     .fadeIn(100)
     .fadeOut(100)
     .fadeIn(100);
-  let audio = new Audio("./sounds/" + name + ".mp3");
+  let audio = new Audio("./assests/sounds/" + name + ".mp3");
   audio.play();
 }
 
@@ -56,7 +56,7 @@ function checkAnswer(currentLevel) {
     }
   } else {
     $("h1").text("Game Over.Press Any key to Restart");
-    let audio = new Audio("./sounds/wrong.mp3");
+    let audio = new Audio("./assests/sounds/wrong.mp3");
     audio.play();
     $("body").addClass("game-over");
     setTimeout(function () {
